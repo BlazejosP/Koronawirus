@@ -12,4 +12,5 @@ then clone github repository
 git clone https://github.com/BlazejosP/Koronowirus.git
 
 Start script
+
 ./koronawirus.sh
