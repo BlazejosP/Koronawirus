@@ -14,4 +14,5 @@ git clone https://github.com/BlazejosP/Koronowirus.git
 Start script
 
 cd Koronowirus
+
 ./koronawirus.sh
