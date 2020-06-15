@@ -9,11 +9,11 @@ sudo apt-get install curl grep
 
 then clone github repository
 
-git clone https://github.com/BlazejosP/Koronowirus.git
+git clone https://github.com/BlazejosP/Koronawirus.git
 
 Go to file directory
 
-cd Koronowirus
+cd Koronawirus
 
 Make file executable
 
