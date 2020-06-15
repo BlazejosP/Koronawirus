@@ -12,12 +12,15 @@ then clone github repository
 git clone https://github.com/BlazejosP/Koronowirus.git
 
 Go to file directory
+
 cd Koronowirus
 
 Make file executable
+
 sudo chmod +x koronawirus.sh
 
 Run File
+
 ./koronawirus.sh
 
 
