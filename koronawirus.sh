@@ -30,7 +30,7 @@ echo "Poland"
 echo $cala_polska_zakazenia "infections"
 echo $cala_polska_zgony "deaths"
 echo ""
-echo "Data for particular województwa"
+echo "Data for particular województwo"
 echo ""
 
 #Województwo Wielkopolskie
