@@ -14,6 +14,14 @@ echo $data
 
 #Poland as a whole country
 cala_polska=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'Cała Polska\;[[:digit:]]*\;[[:digit:]]*'`
+
+
+while  [ -z "$cala_polska" ] ; do
+
+	cala_polska=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'Cała Polska\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 cala_polska_zakazenia=`echo "$cala_polska" | grep -o '[[:digit:]].*'`
 cala_polska_zgony=`echo "$cala_polska_zakazenia" | grep -o ';[[:digit:]]*'`
 cala_polska_zakazenia=`echo "$cala_polska_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -35,6 +43,13 @@ echo ""
 
 #Województwo Wielkopolskie
 wielkopolska=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'wielkopolskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$wielkopolska" ] ; do
+
+wielkopolska=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'wielkopolskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 wielkopolska_zakazenia=`echo "$wielkopolska" | grep -o '[[:digit:]].*'`
 wielkopolska_zgony=`echo "$wielkopolska_zakazenia" | grep -o ';[[:digit:]]*'`
 wielkopolska_zakazenia=`echo "$wielkopolska_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -54,6 +69,13 @@ echo ""
 
 #Województwo Zachodniopomorskie
 zachodniopomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'zachodniopomorskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$zachodniopomorskie" ] ; do
+
+zachodniopomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'zachodniopomorskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 zachodniopomorskie_zakazenia=`echo "$zachodniopomorskie" | grep -o '[[:digit:]].*'`
 zachodniopomorskie_zgony=`echo "$zachodniopomorskie_zakazenia" | grep -o ';[[:digit:]]*'`
 zachodniopomorskie_zakazenia=`echo "$zachodniopomorskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -73,6 +95,13 @@ echo ""
 
 #Województwo Kujawsko-Pomorskie
 kujawsko_pomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'kujawsko-pomorskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$kujawsko_pomorskie" ] ; do
+
+kujawsko_pomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'kujawsko-pomorskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 kujawsko_pomorskie_zakazenia=`echo "$kujawsko_pomorskie" | grep -o '[[:digit:]].*'`
 kujawsko_pomorskie_zgony=`echo "$kujawsko_pomorskie_zakazenia" | grep -o ';[[:digit:]]*'`
 kujawsko_pomorskie_zakazenia=`echo "$kujawsko_pomorskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -92,6 +121,13 @@ echo ""
 
 #Województwo Lubuskie
 lubuskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'lubuskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$lubuskie" ] ; do
+
+lubuskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'lubuskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 lubuskie_zakazenia=`echo "$lubuskie" | grep -o '[[:digit:]].*'`
 lubuskie_zgony=`echo "$lubuskie_zakazenia" | grep -o ';[[:digit:]]*'`
 lubuskie_zakazenia=`echo "$lubuskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -111,6 +147,13 @@ echo ""
 
 #Województwo Dolnośląskie
 dolnoslaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'dolnośląskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$dolnoslaskie" ] ; do
+
+dolnoslaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'dolnośląskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 dolnoslaskie_zakazenia=`echo "$dolnoslaskie" | grep -o '[[:digit:]].*'`
 dolnoslaskie_zgony=`echo "$dolnoslaskie_zakazenia" | grep -o ';[[:digit:]]*'`
 dolnoslaskie_zakazenia=`echo "$dolnoslaskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -130,6 +173,13 @@ echo ""
 
 #Województwo Lubelskie
 lubelskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'lubelskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$lubelskie" ] ; do
+
+lubelskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'lubelskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 lubelskie_zakazenia=`echo "$lubelskie" | grep -o '[[:digit:]].*'`
 lubelskie_zgony=`echo "$lubelskie_zakazenia" | grep -o ';[[:digit:]]*'`
 lubelskie_zakazenia=`echo "$lubelskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -149,6 +199,13 @@ echo ""
 
 #Województwo Łódzkie
 lodzkie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'łódzkie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$lodzkie" ] ; do
+
+lodzkie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'łódzkie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 lodzkie_zakazenia=`echo "$lodzkie" | grep -o '[[:digit:]].*'`
 lodzkie_zgony=`echo "$lodzkie_zakazenia" | grep -o ';[[:digit:]]*'`
 lodzkie_zakazenia=`echo "$lodzkie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -168,6 +225,13 @@ echo ""
 
 #Województwo Małopolskie
 malopolskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'małopolskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$malopolskie" ] ; do
+
+malopolskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'małopolskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 malopolskie_zakazenia=`echo "$malopolskie" | grep -o '[[:digit:]].*'`
 malopolskie_zgony=`echo "$malopolskie_zakazenia" | grep -o ';[[:digit:]]*'`
 malopolskie_zakazenia=`echo "$malopolskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -187,6 +251,13 @@ echo ""
 
 #Województwo Mazowieckie
 mazowieckie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'mazowieckie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$mazowieckie" ] ; do
+
+mazowieckie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'mazowieckie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 mazowieckie_zakazenia=`echo "$mazowieckie" | grep -o '[[:digit:]].*'`
 mazowieckie_zgony=`echo "$mazowieckie_zakazenia" | grep -o ';[[:digit:]]*'`
 mazowieckie_zakazenia=`echo "$mazowieckie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -206,6 +277,13 @@ echo ""
 
 #Województwo Opolskie
 opolskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'opolskie\;[[:digit:]]*\;[[:digit:]]*\;t16'`
+
+while  [ -z "$opolskie" ] ; do
+
+opolskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'opolskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*\;t16'`
+
+done
+
 opolskie_zakazenia=`echo "$opolskie" | grep -o 'e\;[[:digit:]]*\;'`
 opolskie_zgony=`echo "$Strona_z_przypadkami_wirusa" | grep -o '[[:digit:]]*\;t16'`
 opolskie_zgony=`echo "$opolskie_zgony" | grep -o '[[:digit:]]..'`
@@ -226,6 +304,13 @@ echo ""
 
 #Województwo Podkarpackie
 podkarpackie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'podkarpackie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$podkarpackie" ] ; do
+
+podkarpackie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'podkarpackie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 podkarpackie_zakazenia=`echo "$podkarpackie" | grep -o '[[:digit:]].*'`
 podkarpackie_zgony=`echo "$podkarpackie_zakazenia" | grep -o ';[[:digit:]]*'`
 podkarpackie_zakazenia=`echo "$podkarpackie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -245,6 +330,13 @@ echo ""
 
 #Województwo Podlaskie
 podlaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'podlaskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$podlaskie" ] ; do
+
+podlaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'podlaskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 podlaskie_zakazenia=`echo "$podlaskie" | grep -o '[[:digit:]].*'`
 podlaskie_zgony=`echo "$podlaskie_zakazenia" | grep -o ';[[:digit:]]*'`
 podlaskie_zakazenia=`echo "$podlaskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -264,6 +356,13 @@ echo ""
 
 #Województwo Pomorskie
 pomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'pomorskie\;[[:digit:]]*\;[[:digit:]]*\;t22'`
+
+while  [ -z "$pomorskie" ] ; do
+
+pomorskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'pomorskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*\;t22'`
+
+done
+
 pomorskie_zakazenia=`echo "$pomorskie" | grep -o 'e\;[[:digit:]]*\;'`
 pomorskie_zgony=`echo "$Strona_z_przypadkami_wirusa" | grep -o '\;[[:digit:]]*\;t22'`
 pomorskie_zgony=`echo "$pomorskie_zgony" | grep -o '[[:digit:]]..'`
@@ -285,6 +384,14 @@ echo ""
 #Województwo Śląskie
 slaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'śląskie\;[[:digit:]]*\;[[:digit:]]*\;t24'`
 slaskie_zakazenia=`echo "$slaskie" | grep -o 'skie\;[[:digit:]]*\;'`
+
+while  [ -z "$slaskie" ] ; do
+
+slaskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'śląskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*\;t24'`
+slaskie_zakazenia=`echo "$slaskie" | grep -o 'skie\;[[:digit:]]* [[:digit:]]*\;'`
+
+done
+
 slaskie_zgony=`echo "$Strona_z_przypadkami_wirusa" | grep -o '\;[[:digit:]]*\;t24'`
 slaskie_zgony=`echo "$slaskie_zgony" | grep -o '[[:digit:]]..'`
 slaskie_zakazenia=`echo "$slaskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -304,6 +411,14 @@ echo ""
 
 #Województwo Świętokrzyskie
 swietokrzyskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'świętokrzyskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$swietokrzyskie" ] ; do
+
+swietokrzyskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'świętokrzyskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
+
 swietokrzyskie_zakazenia=`echo "$swietokrzyskie" | grep -o '[[:digit:]].*'`
 swietokrzyskie_zgony=`echo "$swietokrzyskie_zakazenia" | grep -o ';[[:digit:]]*'`
 swietokrzyskie_zakazenia=`echo "$swietokrzyskie_zakazenia" | grep -o '[[:digit:]].*\;'`
@@ -323,6 +438,13 @@ echo ""
 
 #Województwo Warmińsko-Mazurskie
 warminsko_mazurskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'warmińsko-mazurskie\;[[:digit:]]*\;[[:digit:]]*'`
+
+while  [ -z "$warminsko_mazurskie" ] ; do
+
+warminsko_mazurskie=`echo "$Strona_z_przypadkami_wirusa" | grep -o 'warmińsko-mazurskie\;[[:digit:]]* [[:digit:]]*\;[[:digit:]]*'`
+
+done
+
 warminsko_mazurskie_zakazenia=`echo "$warminsko_mazurskie" | grep -o '[[:digit:]].*'`
 warminsko_mazurskie_zgony=`echo "$warminsko_mazurskie_zakazenia" | grep -o ';[[:digit:]]*'`
 warminsko_mazurskie_zakazenia=`echo "$warminsko_mazurskie_zakazenia" | grep -o '[[:digit:]].*\;'`
