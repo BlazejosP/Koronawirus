@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+
 # Polish goverment offical site with Covid-19 cases death and infections for whole country and with division for different województwa
 Strona_z_przypadkami_wirusa=$(curl https://www.gov.pl/web/koronawirus/wykaz-zarazen-koronawirusem-sars-cov-2)
 
@@ -462,4 +463,9 @@ echo $warminsko_mazurskie_zakazenia "infections"
 echo $warminsko_mazurskie_zgony "deaths"
 echo ""
 
+
+
+
+#Upload data to Domoticz with use of JOSN API
+. Koronawirus_domoticz_upload.sh
 
