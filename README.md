@@ -1,4 +1,4 @@
-# Koronawirus
+# Koronawirus-Poland 
  COVID-19 Polish official govermental statistics bash data scraping tool
 
 This bash script is intended to run on linux.
