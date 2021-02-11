@@ -1,4 +1,4 @@
-# Koronawirus-Poland (not working since 24 November)
+# Koronawirus-Poland (not working since 24 November 2020 due to changes on goverment website)
  COVID-19 Polish official govermental statistics bash data scraping tool
 24.11.2020 stops work because changes on oficial website in not so long time I will made this software working again when do necessary changes in the code.
 
